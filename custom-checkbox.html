@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Custom-checkbox</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/custom-checkbox.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <table class="table">
+                <tr class="row row1">
+                    <td><span class="checkbox-label">Checkbox</span></td>
+                    <td><span>Radio</span></td>
+                    <td><span>Switch</span></td>
+                </tr>
+                <tr class="row">
+                    <td><span>On</span></td>
+                    <td>
+                        <label class="checkbox">
+                            <input
+                                type="checkbox"
+                                checked
+                                name="checkbox"
+                                class="checkbox__input"
+                                hidden
+                            />
+                        </label>
+                    </td>
+                    <td>
+                        <label class="radio">
+                            <input type="radio" checked name="radio" hidden />
+                        </label>
+                    </td>
+                    <td>
+                        <label class="switch">
+                            <input
+                                type="checkbox"
+                                checked
+                                name="switch"
+                                hidden
+                            />
+                        </label>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td><span>Off</span></td>
+                    <td>
+                        <label class="checkbox">
+                            <input
+                                type="checkbox"
+                                name="checkbox"
+                                class="checkbox__input"
+                                hidden
+                            />
+                        </label>
+                    </td>
+                    <td>
+                        <label class="radio">
+                            <input type="radio" name="radio" hidden />
+                        </label>
+                    </td>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" name="switch" hidden />
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

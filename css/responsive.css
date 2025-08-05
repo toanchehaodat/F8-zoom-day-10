@@ -1,0 +1,227 @@
+.nav-logo,
+.drawer-open,
+.drawer-close,
+.drawer-overlay {
+    display: none;
+}
+@media (max-width: 1199.98px) {
+    .main .inner {
+        gap: 20px;
+    }
+    .action-btn {
+        font-size: 1.6rem;
+    }
+    .courses-list {
+        --spacing: 20px;
+        --columns: 2;
+    }
+
+    .course-item .info {
+        padding: 15px;
+    }
+
+    .header .nav > li > a {
+        padding: 20px 10px;
+        font-size: 1.3rem;
+    }
+    .logo {
+        width: 100px;
+    }
+
+    /* Footer   */
+    .footer-list-email {
+        flex-wrap: wrap;
+        --columns: 3;
+        --spacing: 30px;
+    }
+}
+
+/* tablet->0 */
+@media (max-width: 991.98px) {
+    .logo-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 165px;
+    }
+    .nav-logo {
+        display: block;
+        padding: 40px;
+    }
+
+    .drawer-open {
+        display: block;
+        align-self: start;
+        color: var(--white);
+        padding: 20px;
+        margin-left: -20px;
+        margin-bottom: -20px;
+        font-size: 2.8rem;
+    }
+    .container {
+        width: 780px;
+    }
+    .sidebar {
+        display: none;
+    }
+
+    .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        background: var(--black);
+
+        translate: -101%;
+        transition: translate 0.5s ease;
+    }
+
+    .drawer-overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity ease, visibility ease;
+        transition-duration: 0.5s;
+    }
+
+    #drawer:checked ~ .nav-wrapper {
+        translate: 0;
+    }
+
+    #drawer:checked ~ .drawer-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .drawer-close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px 30px;
+        color: var(--white);
+    }
+
+    .nav {
+        width: 100%;
+        flex-direction: column;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    .header .nav > li > a {
+        width: 100%;
+        padding: 20px 40px;
+        /* text-align: center; */
+    }
+
+    .submenu {
+        position: initial;
+        opacity: 1;
+        visibility: visible;
+        scale: 1;
+    }
+
+    .submenu li {
+        background-color: #1c1c1c;
+    }
+
+    .submenu a {
+        padding-left: 60px;
+        color: var(--white);
+        background: #1c1c1c;
+    }
+
+    /* Foorter   */
+    .footer-list-email {
+        flex-wrap: wrap;
+        --columns: 2;
+        --spacing: 10px;
+    }
+}
+
+/* Mobile->0 */
+@media (max-width: 767.98px) {
+    .header-wrapper {
+        min-height: 386px;
+    }
+
+    .courses-list {
+        --spacing: 20px;
+        --columns: 1;
+    }
+
+    .nav-wrapper {
+        width: 80%;
+        align-items: flex-start;
+    }
+
+    .nav-logo {
+        margin-top: 30px;
+    }
+
+    .nav > li > a {
+        text-align: left;
+    }
+
+    .drawer-close {
+        opacity: 0.7;
+        font-size: 2.2rem;
+    }
+
+    .submenu {
+        position: initial;
+
+        opacity: 1;
+        visibility: visible;
+        scale: 1;
+    }
+
+    .submenu li {
+        background-color: #1c1c1c;
+    }
+
+    .submenu a {
+        padding-left: 60px;
+        color: var(--white);
+        background: #1c1c1c;
+    }
+
+    /* Foorter   */
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .footer-list-email {
+        margin: 10px;
+        flex-wrap: wrap;
+        --columns: 2;
+        --spacing: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo p {
+        align-items: center;
+    }
+    .meta {
+        justify-content: center;
+        align-items: center;
+    }
+}
